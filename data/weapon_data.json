@@ -1,0 +1,302 @@
+{
+  "weapons": {
+    "sword": {
+      "id": "sword",
+      "name": "Longsword",
+      "description": "A balanced weapon with medium speed and damage. Good for beginners.",
+      "weapon_type": "melee",
+      "rarity": "common",
+      
+      "stats": {
+        "base_damage": 25,
+        "attack_speed": 1.0,
+        "crit_chance": 0.1,
+        "crit_multiplier": 1.5,
+        "knockback": 8,
+        "range": 60
+      },
+      
+      "stamina": {
+        "light_attack": 20,
+        "heavy_attack": 35,
+        "combo_finisher": 40
+      },
+      
+      "attack_timing": {
+        "windup_frames": 8,
+        "active_frames": 12,
+        "recovery_frames": 15,
+        "combo_window": 20
+      },
+      
+      "hitbox": {
+        "width": 60,
+        "height": 40,
+        "offset_x": 40,
+        "offset_y": -10,
+        "arc_sweep": 120
+      },
+      
+      "effects": {
+        "screen_shake": 5,
+        "hit_freeze": 3,
+        "particle_count": 5,
+        "particle_color": [200, 200, 220]
+      },
+      
+      "combo_chain": ["light", "light", "heavy"],
+      "special_ability": null
+    },
+    
+    "dagger": {
+      "id": "dagger",
+      "name": "Shadow Dagger",
+      "description": "Extremely fast attacks with high critical chance but low damage. Rewards precision.",
+      "weapon_type": "melee",
+      "rarity": "uncommon",
+      
+      "stats": {
+        "base_damage": 15,
+        "attack_speed": 1.8,
+        "crit_chance": 0.35,
+        "crit_multiplier": 2.0,
+        "knockback": 3,
+        "range": 35
+      },
+      
+      "stamina": {
+        "light_attack": 10,
+        "heavy_attack": 18,
+        "combo_finisher": 25
+      },
+      
+      "attack_timing": {
+        "windup_frames": 3,
+        "active_frames": 8,
+        "recovery_frames": 8,
+        "combo_window": 15
+      },
+      
+      "hitbox": {
+        "width": 35,
+        "height": 30,
+        "offset_x": 25,
+        "offset_y": -5,
+        "arc_sweep": 90
+      },
+      
+      "effects": {
+        "screen_shake": 2,
+        "hit_freeze": 1,
+        "particle_count": 3,
+        "particle_color": [120, 80, 180]
+      },
+      
+      "combo_chain": ["light", "light", "light", "heavy"],
+      "special_ability": "backstab_bonus"
+    },
+    
+    "greatsword": {
+      "id": "greatsword",
+      "name": "Zweihander",
+      "description": "Devastating damage with wide sweeping attacks. Slow but powerful.",
+      "weapon_type": "melee",
+      "rarity": "rare",
+      
+      "stats": {
+        "base_damage": 50,
+        "attack_speed": 0.5,
+        "crit_chance": 0.05,
+        "crit_multiplier": 2.5,
+        "knockback": 15,
+        "range": 80
+      },
+      
+      "stamina": {
+        "light_attack": 40,
+        "heavy_attack": 60,
+        "combo_finisher": 70
+      },
+      
+      "attack_timing": {
+        "windup_frames": 18,
+        "active_frames": 20,
+        "recovery_frames": 30,
+        "combo_window": 30
+      },
+      
+      "hitbox": {
+        "width": 80,
+        "height": 60,
+        "offset_x": 50,
+        "offset_y": -20,
+        "arc_sweep": 180
+      },
+      
+      "effects": {
+        "screen_shake": 12,
+        "hit_freeze": 8,
+        "particle_count": 12,
+        "particle_color": [255, 100, 100]
+      },
+      
+      "combo_chain": ["heavy", "heavy"],
+      "special_ability": "aoe_cleave"
+    },
+    
+    "spear": {
+      "id": "spear",
+      "name": "Dragon Lance",
+      "description": "Long reach with fast thrust attacks. Excellent for keeping enemies at bay.",
+      "weapon_type": "melee",
+      "rarity": "uncommon",
+      
+      "stats": {
+        "base_damage": 22,
+        "attack_speed": 1.3,
+        "crit_chance": 0.12,
+        "crit_multiplier": 1.8,
+        "knockback": 6,
+        "range": 90
+      },
+      
+      "stamina": {
+        "light_attack": 15,
+        "heavy_attack": 28,
+        "combo_finisher": 35
+      },
+      
+      "attack_timing": {
+        "windup_frames": 6,
+        "active_frames": 15,
+        "recovery_frames": 12,
+        "combo_window": 18
+      },
+      
+      "hitbox": {
+        "width": 90,
+        "height": 25,
+        "offset_x": 60,
+        "offset_y": -5,
+        "arc_sweep": 30
+      },
+      
+      "effects": {
+        "screen_shake": 4,
+        "hit_freeze": 2,
+        "particle_count": 4,
+        "particle_color": [255, 215, 100]
+      },
+      
+      "combo_chain": ["light", "light", "light"],
+      "special_ability": "pierce"
+    },
+    
+    "hammer": {
+      "id": "hammer",
+      "name": "Warhammer",
+      "description": "Crushing blows with chance to stun. Heavy impact damage.",
+      "weapon_type": "melee",
+      "rarity": "rare",
+      
+      "stats": {
+        "base_damage": 45,
+        "attack_speed": 0.6,
+        "crit_chance": 0.08,
+        "crit_multiplier": 2.0,
+        "knockback": 18,
+        "range": 50
+      },
+      
+      "stamina": {
+        "light_attack": 35,
+        "heavy_attack": 55,
+        "combo_finisher": 65
+      },
+      
+      "attack_timing": {
+        "windup_frames": 15,
+        "active_frames": 18,
+        "recovery_frames": 25,
+        "combo_window": 25
+      },
+      
+      "hitbox": {
+        "width": 50,
+        "height": 50,
+        "offset_x": 35,
+        "offset_y": -15,
+        "arc_sweep": 100
+      },
+      
+      "effects": {
+        "screen_shake": 15,
+        "hit_freeze": 10,
+        "particle_count": 15,
+        "particle_color": [180, 180, 200],
+        "stun_chance": 0.25,
+        "stun_duration": 30
+      },
+      
+      "combo_chain": ["heavy", "light", "heavy"],
+      "special_ability": "ground_slam"
+    }
+  },
+  
+  "weapon_scaling": {
+    "description": "How weapon damage scales with player stats",
+    "sword": {
+      "strength": 0.7,
+      "dexterity": 0.5,
+      "intelligence": 0.0
+    },
+    "dagger": {
+      "strength": 0.3,
+      "dexterity": 1.0,
+      "intelligence": 0.0
+    },
+    "greatsword": {
+      "strength": 1.2,
+      "dexterity": 0.2,
+      "intelligence": 0.0
+    },
+    "spear": {
+      "strength": 0.5,
+      "dexterity": 0.8,
+      "intelligence": 0.0
+    },
+    "hammer": {
+      "strength": 1.0,
+      "dexterity": 0.3,
+      "intelligence": 0.0
+    }
+  },
+  
+  "stamina_system": {
+    "max_stamina": 100,
+    "regen_rate": 5,
+    "regen_delay_after_action": 30,
+    "actions": {
+      "dodge": 25,
+      "dash": 20,
+      "sprint": 1,
+      "block": 10,
+      "parry": 15,
+      "jump": 0
+    },
+    "penalties": {
+      "exhausted_movement_speed": 0.5,
+      "exhausted_attack_damage": 0.7,
+      "cannot_dodge_at": 0,
+      "cannot_attack_at": 0
+    }
+  },
+  
+  "combat_modifiers": {
+    "backstab_multiplier": 2.5,
+    "parry_window_frames": 8,
+    "perfect_dodge_window_frames": 5,
+    "combo_damage_bonus_per_hit": 0.1,
+    "max_combo_bonus": 0.5
+  }
+}
